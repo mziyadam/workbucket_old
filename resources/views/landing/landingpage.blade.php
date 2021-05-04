@@ -18,10 +18,10 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                     @else
-                         <!--<a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Join</a>-->
+                    <p class="topmenu1"><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Join</a></p>
 
                         @if (Route::has('register'))
-                            <p class="topmenu1"><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Join</a></p>
+                            <!--<a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Join</a>-->
                         @endif
                     @endauth
                 </div>
