@@ -65,6 +65,7 @@
     </div>
     </div>
 </form>
-<p class="toregister">Dont have an account? <a class="toregistera" href="">Register now!</a></p>
+
+<p class="toregister">Don't have an account? <a class="toregistera" href="{{ route('register') }}">Register now!</a></p>
 </body>
 </html>
