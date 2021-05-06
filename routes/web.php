@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\pController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('/landing/landingpage');
 	//return view('welcome');
 });
-
+Route::get('/terms', function () {
+    return view('terms');
+	//return view('welcome');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
